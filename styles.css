@@ -370,7 +370,7 @@ body {
     }
 
     .overlay-main {
-        margin: auto;
+        margin: 2em;
     }
     .overlay-main p {
         font-size: 14px;
