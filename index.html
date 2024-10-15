@@ -3,37 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B&N</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <title>Barton & Nichols Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="./assets/new_img1.jpg" alt="Header Image">
-            <h1>BARTON &amp; NICHOLS</h1>
+<!-- Navbar Section -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-brand">
+            <h1 class="navbar-title">BARTON & NICHOLS Ltd.</h1>
+            <h2 class="navbar-subtitle">The Motor Body Repair Centre</h2>
         </div>
-
-        <div class="contact-info">
-            <p><strong>Address:</strong> Bryn Cefni Industrial Estate, Llangefni, Anglesey, LL77 7XA</p>
-            <p><strong>Tel:</strong> 01248 750 989 | <strong>Fax:</strong> 01248 751 153</p>
-            <p><strong>Email:</strong> info@bartonandnichols.co.uk</p>
-            <a href="https://goo.gl/maps/MiekGEDhkpSDe5m4A" class="location-button">Find Us on Google Maps</a>
-        </div>
-
-        <div class="card-grid">
-            <div class="card">
-                <img src="./assets/img2.jpg" alt="Car repair 1">
-                <p>Reliable and professional car repair services.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img3.jpg" alt="Car repair 2">
-                <p>Experienced mechanics for all types of vehicles.</p>
-            </div>
-            <div class="card">
-                <img src="./assets/img4.jpg" alt="Car repair 3">
-                <p>Modern equipment and fast service.</p>
-            </div>
+        <div class="navbar-links">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
+</nav>
+
+
+    <section class="main-body">
+        <div class="overlay-main">
+            <p><strong>Address:</strong> Bryn Cefni Industrial Estate, Llangefni, Anglesey, LL77 7XA</p>
+            <p><strong>Tel:</strong> 01248 750 989</p>
+            <p><strong>Email:</strong> info@bartonandnichols.co.uk</p>
+            <a href="https://goo.gl/maps/MiekGEDhkpSDe5m4A" class="map-button">FIND US ON GOOGLE MAPS</a>
+        </div>
+
+        <div class="overlay-bottom-right">
+            <p>Established in 1996, we are the premier choice of repairers for North Wales. Approved and recognised by leading insurance companies and accident management companies, alike, we have achieved and maintained The British Standard for the Repair of Accident Damaged Vehicles, since its introduction in 2007.</p>
+        </div>
+    </section>
+
+    <section class="about-body" id="about">
+        <div class="about-overlay-main">
+            <h2>Have you been involved in an Accident or Collision?</h2>
+            <h4>Call us to book an Assessment or Repair 01248 750 153</h4>
+            <p>Established in 1996, Andy Barton, Carl Nichols and their team of Highly Skilled Body Repair Technicians, have a wealth of Skills and Experience. So when it comes to the Engineering Excellence required to reinstate an accident damaged vehicle, they are second to none. When it comes to First Class Customer Service, they are way ahead of the game</p>
+            <p>We offer a professional and friendly service for all your vehicle body repair needs. No Matter if you’re a domestic vehicle owner, an individual business user or a commercial fleet operator, we are here to help with your claim and your repair</p>
+        </div>
+
+        <div class="about-overlay-right">
+            <div class="box">
+                <h4>Efficient and Effective</h4>
+                <p>We employ the latest technology to ensure the minimum Key-to-Key time.</p>
+                <div class="tick">✔️</div>
+            </div>
+            <div class="box">
+                <h4>Engineering Excellence</h4>
+                <p>We are vehicle body repair specialists, from the smallest scratch to major structural damage.</p>
+                <div class="tick">✔️</div>
+            </div>
+            <div class="box">
+                <h4>Customer Service</h4>
+                <p>From reception to delivery, our staff are trustworthy and client focussed, no matter your issue.</p>
+                <div class="tick">✔️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact-body" id="contact">
+        <div class="overlay-contact">
+            <h1>BARTON & NICHOLS</h1>
+            <h3>The Motor Body Repair Centre</h3>
+        </div>
+
+        <div class="overlay-why-us">
+            <h1>WHY CHOOSE US?</h1>
+            <h4>People are free to make their choice, but we pride ourselves on quality of our work and our customer services, and THAT’S why they choose</h4>
+            <h2>BARTON AND NICHOLS</h2>
+            <a href="#" class="contact-button">Contact Us</a>
+        </div>
+
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; <span id="year"></span> Barton & Nichols Ltd. All Rights Reserved | Powered by <a href="https://mjclifford.com" class="link">mjclifford.com</a></p>
+    </div>
+</footer>
+
+<script>
+    const date = new Date()
+    const year = date.getFullYear()
+    document.getElementById("year").innerText = year
+</script>
+
 </body>
 </html>
