@@ -365,12 +365,13 @@ body {
     .main-body, .about-body {
         flex-direction: column;
         justify-content: flex-start;
-        padding: 20px;
+        /* padding: 20px; */
         min-height: 100vh;
     }
 
     .overlay-main {
-        margin: 2em;
+        margin-top: 40px;
+        width: 100%;
     }
     .overlay-main p {
         font-size: 14px;
@@ -399,8 +400,15 @@ body {
         width: 100%;
         right: 0;
         left: 0;
-        margin-bottom: 20px;
+        margin-top: 20px;
         font-size: 14px;
+
+
+        position: unset;
+        bottom: 0;
+        right: 0;
+        padding: 20px;
+
     }
     .contact-body {
         padding: 20px;
