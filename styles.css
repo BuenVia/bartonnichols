@@ -209,7 +209,7 @@ body {
         background-color: #ccc;
     }
     .main-body, .about-body, .contact-body {
-        max-width: 1400px;
+        max-width: 1600px;
     }
     .overlay-main {
         width: 80%;
